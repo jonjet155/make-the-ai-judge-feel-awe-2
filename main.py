@@ -13,6 +13,7 @@ TEXT = "One ember is left in the grate. It breathes, slow, and does not go out. 
 def main() -> None:
     # One text, no trailing newline: the file holds exactly the text,
     # 255 Unicode code points, inside the 1-280 limit.
+    # The ember holds the whole history — tree, hill, sea floor — warm.
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(TEXT)
